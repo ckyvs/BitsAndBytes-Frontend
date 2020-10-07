@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bits-and-bytes"
+    }
+  },
+  "defaultProject": "bits-and-bytes",
+  "cli": {
+    "analytics": false
+  }
 }
