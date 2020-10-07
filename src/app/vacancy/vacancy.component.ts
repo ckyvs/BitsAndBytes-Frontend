@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Candidate } from 'src/Models/Candidate';
+import { BackendService } from '../backend.service';
+
 
 @Component({
   selector: 'app-vacancy',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VacancyComponent implements OnInit {
 
-  constructor() { }
+  person: Candidate;
+
+  constructor(private service: BackendService) { }
 
   ngOnInit(): void {
+  }
+
+  getFiltered() {
+    this.service.getFilteredData().subscribe(data => {
+      this.person = data;
+    })
   }
 
 }

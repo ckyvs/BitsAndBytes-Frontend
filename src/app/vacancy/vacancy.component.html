@@ -1,6 +1,6 @@
-<h1 class="text-center">For vacancy</h1>
+<h1 class="text-center py-5">For vacancy</h1>
 <div class="table-responsive">
-    <div class="container-fluid">
+    <div class="container" style="width: 60%;">
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -11,23 +11,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
+                <tr *ngFor="let item of Candidate">
+                    <th scope="row">{{item.id }}</th>
+                    <td>{{item.domain_name}}</td>
+                    <td>{{item.team_name}}</td>
+                    <td>{{item.role_name}}</td>
                 </tr>
             </tbody>
         </table>
