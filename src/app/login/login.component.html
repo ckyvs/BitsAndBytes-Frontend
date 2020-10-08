@@ -1,0 +1,14 @@
+<div class="container w-25 mt-3 pt-5">
+    <form class="text-center border border-light p-5" (ngSubmit)="onSubmit()">
+
+        <p class="h4 mb-4">Sign in</p>
+
+        <div class="alert alert-warning text-left" *ngIf="loginError()">{{loginStatus}}</div>
+
+        <input type="email" [(ngModel)]="username" id="defaultLoginFormUserName" name="email" class="form-control mb-4" placeholder="Username">
+
+        <input type="password" [(ngModel)]="password" id="defaultLoginFormPassword" name="password" class="form-control mb-4" placeholder="Password">
+
+        <button block="true" class="my-4 btn btn-success" type="submit">Sign in</button>
+    </form>
+</div>
