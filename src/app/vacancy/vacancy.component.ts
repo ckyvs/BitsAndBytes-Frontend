@@ -32,4 +32,8 @@ export class VacancyComponent implements OnInit {
     })
   }
 
+  addVacancy() {
+    this.router.navigate(['create/-1'])
+  }
+
 }

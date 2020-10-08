@@ -1,22 +1,22 @@
+<app-header></app-header>
 <div class="card my-5" style="width: 30%;">
     <h5 class="card-header text-center bg-light font-weight-bold">Change the status of Vacancy</h5>
     <div class="card-body text-center">
         <label for="status" class="mx-3">Status</label>
 
-        <select id="status">
+        <select id="status" [(ngModel)]="status">
 
             <option value="On">Select</option>
-            <option value="On">Open to applications</option>
-            <option value="On">Filtering Candidates</option>
-            <option value="Off">Conducting tests</option>
-            <option value="Off">Conducting interview</option>
-            <option value="Off">Waiting for candidate to response</option>
-            <option value="Off">Conducting Background check</option>
-            <option value="Off">Closed</option>
+            <option value="Open">Open to applications</option>
+            <option value="Filtering Candidates">Filtering Candidates</option>
+            <option value="Conducting tests">Conducting tests</option>
+            <option value="Waiting for response">Waiting for candidate to response</option>
+            <option value="Conducting Background check">Conducting Background check</option>
+            <option value="Closed">Closed</option>
 
         </select>
         <div>
-            <button class="btn btn-primary my-3 px-3">Save</button>
+            <button class="btn btn-primary my-3 px-3" (click)="save()">Save</button>
         </div>
     </div>
 </div>

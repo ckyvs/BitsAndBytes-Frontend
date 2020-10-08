@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { LogoutComponent } from './logout/logout.component';
 
 import { SaveVacancyComponent } from './save-vacancy/save-vacancy.component';
+import { CreateVacancyComponent } from './create-vacancy/create-vacancy.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { SaveVacancyComponent } from './save-vacancy/save-vacancy.component';
     HomeComponent,
     LogoutComponent,
 
-    SaveVacancyComponent
+    SaveVacancyComponent,
+
+    CreateVacancyComponent
   ],
   imports: [
     BrowserModule,

@@ -11,4 +11,16 @@ export class BackendService {
   getFilteredData() {
     return this.http.get<Candidate[]>("http://localhost:8080/api/vacancies")
   }
+
+  changeStatus(id, status) {
+    return this.http.put(`http://localhost:8080/api/vacancies/${id}`, status)
+  }
+
+  getOneVacancy(id) {
+    return this.http.get<Candidate>(`http://localhost:8080/api/vacancies/${id}`);
+  }
+
+  addVacancy(vacancy) {
+    return this.http.post("http://localhost:8080/api/vacancies", vacancy);
+  }
 }

@@ -5,4 +5,5 @@ export class Candidate {
     public domain: string;
     public team: string;
     public role: string;
+    public status:string;
 }

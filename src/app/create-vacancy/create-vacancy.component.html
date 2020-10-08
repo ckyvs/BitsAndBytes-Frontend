@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div class="container" *ngIf="vacancy">
+    <form class="was-validated mt-3" (submit)="!form.invalid && addVacancy()" name="form" #form="ngForm">
+        <div class="form-group">
+            <label for="domain">Domain:</label>
+            <select class="form-control" id="domain" name="domain" [(ngModel)]="vacancy.domain" required>
+                <option selected>Engineering</option>
+                <option>Marketing</option>
+                <option>Sales</option>
+                <option>HR</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="team">Team:</label>
+            <select class="form-control" id="team" name="team" [(ngModel)]="vacancy.team" required>
+                <option selected>Documentum</option>
+                <option>Archive Server</option>
+                <option>Info Archive</option>
+                <option>ECM</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="role">Role:</label>
+            <select class="form-control" id="role" name="role" [(ngModel)]="vacancy.role" required>
+                <option selected>Intern</option>
+                <option>SDE-1</option>
+                <option>SDE-2</option>
+                <option>SDE-3</option>
+                <option>Manager</option>
+                <option>Senior Manager</option>
+                <option>Director</option>
+            </select>
+        </div>
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+</div>
