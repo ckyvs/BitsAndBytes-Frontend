@@ -20,8 +20,10 @@
                     <td>{{vacancy.team}}</td>
                     <td>{{vacancy.role}}</td>
                     <td>{{vacancy.status}}</td>
-                    <button class="btn btn-info my-2 px-3" routerLink="/save/{{vacancy.id}}"
-                        routerLinkActive="router-link-active">Edit</button>
+                    <!-- <div *ngIf= "vacancy.status != 'Closed'"> -->
+                    <td><button class="btn btn-info my-2 px-3" *ngIf= "vacancy.status != 'Closed'" routerLink="/save/{{vacancy.id}}"
+                        routerLinkActive="router-link-active">Edit</button></td>
+                    <!-- </div> -->
                 </tr>
             </tbody>
             <button class="btn btn-success " (click)="addVacancy()">Add vacancy</button>
