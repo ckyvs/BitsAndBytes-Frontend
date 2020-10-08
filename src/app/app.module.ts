@@ -11,6 +11,8 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { LogoutComponent } from './logout/logout.component';
+import { EditVacancyComponent } from './edit-vacancy/edit-vacancy.component';
+import { SaveVacancyComponent } from './save-vacancy/save-vacancy.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { LogoutComponent } from './logout/logout.component';
     HeaderComponent,
     LoginComponent,
     HomeComponent,
-    LogoutComponent
+    LogoutComponent,
+    EditVacancyComponent,
+    SaveVacancyComponent
   ],
   imports: [
     BrowserModule,
