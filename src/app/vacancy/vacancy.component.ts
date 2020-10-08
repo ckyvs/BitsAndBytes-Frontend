@@ -12,7 +12,7 @@ import { AuthenticationService } from '../service/authentication.service';
 })
 export class VacancyComponent implements OnInit {
 
-  person: Candidate;
+  person: Candidate[];
 
   constructor(
     private service: BackendService,
@@ -22,10 +22,12 @@ export class VacancyComponent implements OnInit {
   ngOnInit(): void {
     if(!this.authService.isLoggedIn())
       this.router.navigate(['']);
+    this.getFiltered();
   }
 
   getFiltered() {
     this.service.getFilteredData().subscribe(data => {
+      console.log(data);
       this.person = data;
     })
   }

@@ -9,6 +9,6 @@ export class BackendService {
   constructor(private http: HttpClient) { }
 
   getFilteredData() {
-    return this.http.get<Candidate>("http://localhost:8080")
+    return this.http.get<Candidate[]>("http://localhost:8080/api/vacancies")
   }
 }
