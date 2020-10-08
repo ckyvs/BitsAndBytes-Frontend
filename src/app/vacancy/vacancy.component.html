@@ -9,14 +9,17 @@
                     <th scope="col">Domain</th>
                     <th scope="col">Team</th>
                     <th scope="col">Role</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let item of person">
-                    <th scope="row">{{item.id}}</th>
-                    <td>{{item.domain}}</td>
-                    <td>{{item.team}}</td>
-                    <td>{{item.role}}</td>
+                <tr>
+                    <td>xx</td>
+                    <td>yy</td>
+                    <td>zz</td>
+                    <td>tt</td>
+                    <button class="btn btn-info my-2 px-3" [routerLink]="['/save']"
+                        routerLinkActive="router-link-active">Edit</button>
                 </tr>
             </tbody>
         </table>

@@ -1,25 +1,22 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <!-- Default form subscription -->
-            <p class="text-center h4">Update the vacancy info</p>
-            <form class="text-center border border-light p-5" action="#!">
+<div class="card my-5" style="width: 30%;">
+    <h5 class="card-header text-center bg-light font-weight-bold">Change the status of Vacancy</h5>
+    <div class="card-body text-center">
+        <label for="status" class="mx-3">Status</label>
 
+        <select id="status">
 
+            <option value="On">Select</option>
+            <option value="On">Open to applications</option>
+            <option value="On">Filtering Candidates</option>
+            <option value="Off">Conducting tests</option>
+            <option value="Off">Conducting interview</option>
+            <option value="Off">Waiting for candidate to response</option>
+            <option value="Off">Conducting Background check</option>
+            <option value="Off">Closed</option>
 
-
-                <input type="text" id="domain" class="form-control mb-4" placeholder="Domain">
-
-
-                <input type="text" id="team" class="form-control mb-4" placeholder="Team">
-                <input type="text" id="role" class="form-control mb-4" placeholder="Role">
-
-
-                <button class="btn btn-info px-5" type="submit">Save</button>
-
-
-            </form>
-
+        </select>
+        <div>
+            <button class="btn btn-primary my-3 px-3">Save</button>
         </div>
     </div>
 </div>

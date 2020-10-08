@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { LogoutComponent } from './logout/logout.component';
-import { EditVacancyComponent } from './edit-vacancy/edit-vacancy.component';
+
 import { SaveVacancyComponent } from './save-vacancy/save-vacancy.component';
 
 @NgModule({
@@ -22,7 +22,7 @@ import { SaveVacancyComponent } from './save-vacancy/save-vacancy.component';
     LoginComponent,
     HomeComponent,
     LogoutComponent,
-    EditVacancyComponent,
+
     SaveVacancyComponent
   ],
   imports: [
